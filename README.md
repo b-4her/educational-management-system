@@ -57,4 +57,4 @@ requiring multiple clicks. If you encounter this issue, try clicking it several 
 - LinkedIn: [b-4her](https://www.linkedin.com/in/b-4her)
 - GitHub: [b-4her](https://github.com/b-4her)
 - YouTube: [b-4her](https://www.youtube.com/@b-4her)
-- Email: b4her1info@gmail.com
+- Email: baher.alabbar@gmail.com
