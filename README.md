@@ -201,7 +201,7 @@ To install the Educational Management System, follow these steps:
 
 4. **Run the program:**
    ```
-   python project.py
+   python3 project.py
    ```
 
 5. *(Optional)* If you want to use the fake users data provided,replace the empty `users_data` and `courses_data` folders with the ones inside the folder named `fake_data`. You'll find the users' information inside a CSV file called `fake_users`. You can use this information to login and try the program.
@@ -225,3 +225,7 @@ Simply run the program and follow the on-screen instructions to sign up, log in,
 - GitHub: [b-4her](https://github.com/b-4her)
 - YouTube: [b-4her](https://www.youtube.com/@b-4her)
 - Email: baher.alabbar@gmail.com
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
