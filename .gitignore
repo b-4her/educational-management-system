@@ -82,3 +82,7 @@ venv.bak/
 
 # Local data
 *.sqlite3
+
+# Ignore user and course data folders if generated at runtime
+users_data/
+courses_data/
