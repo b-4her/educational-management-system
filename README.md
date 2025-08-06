@@ -154,9 +154,6 @@ As a beginner project, I faced several challenges that required creative problem
 3. **Keyboard Interrupts (Ctrl+C) Navigation**  
    I tried to implement Ctrl+C as a shortcut for navigating back to previous menus. However, this approach was inconsistent and sometimes caused the program to exit or behave unexpectedly. While I couldn’t fully resolve this, it was a valuable lesson in handling keyboard interrupts and user input gracefully.
 
-4. **Data Consistency and Corruption** *(Potential Challenge)*  
-   Since the system relies on file-based storage, there’s a risk of data corruption if the program is interrupted during a save operation. Implementing backup or atomic write strategies could help mitigate this risk.
-
 Overall, these challenges helped me learn about error handling, data management, and the importance of planning for edge cases in software development.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
