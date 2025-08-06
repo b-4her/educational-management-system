@@ -69,12 +69,16 @@ educational-management-system/
 │   └── usernames_list.txt       # Tracks all user objects saved (one per line)
 │
 ├── courses.py                   # Handles course-related logic and data structures
+├── users.py                     # Handles user-related logic and data structures
+│
 ├── main_menu.py                 # Main menu logic and navigation
 ├── prof_portal.py               # Professor portal (inherits from main menu)
+├── student_portal.py            # Student portal (inherits from professor portal)
+│
 ├── project_art.py               # ASCII art or UI enhancements for the CLI
 ├── project.py                   # Entry point for running the application
-├── student_portal.py            # Student portal (inherits from professor portal)
-├── users.py                     # Handles user-related logic and data structures
+│
+├── LICENSE                      # Project License
 └── README.md                    # Project documentation
 ```
 
