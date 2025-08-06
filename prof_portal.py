@@ -10,7 +10,7 @@ and assignments, and set grades for student submissions.
 
 from main_menu import MainMenu  # Inheriting some methods
 from courses import Course  # Creating classes
-import Project_art  # Project-specific art elements
+import project_art  # Project-specific art elements
 import pickle  # Save and load user object data
 import random  # Generate random user IDs
 from tabulate import tabulate  # Making nice looking tables of data
@@ -18,10 +18,10 @@ import os  # Removing files
 import sys  # exit
 
 
-COURSES_LIST_PATH = r"Courses_Data/courses_list.txt"
-COURSE_OBJECTS_FOLDER = "Courses_Data"
-USERNAMES_LIST_PATH = r"Users/usernames_list.txt"
-USER_OBJECTS_FOLDER = "Users"
+COURSES_LIST_PATH = r"courses_data/courses_list.txt"
+COURSE_OBJECTS_FOLDER = "courses_data"
+USERNAMES_LIST_PATH = r"users/usernames_list.txt"
+USER_OBJECTS_FOLDER = "users"
 
 
 # Inherets MainMenu class.
@@ -40,7 +40,7 @@ class ProfPortal(MainMenu):
         or listing created courses."""
 
         try:
-            print(Project_art.professor_portal)
+            print(project_art.professor_portal)
             print(
                 "Please make a choice:",
                 "   1 - List Courses",
@@ -79,7 +79,7 @@ class ProfPortal(MainMenu):
             try:
                 if n == 1:
                     n += 1
-                    print(Project_art.Courses_list)
+                    print(project_art.Courses_list)
                     current_prof_courses = cls.current_prof_courses()
 
                     if len(current_prof_courses) > 0:
@@ -128,7 +128,7 @@ class ProfPortal(MainMenu):
     def create_course(cls):
         """Allows the professor to create a course by
         providing the necessary information about it."""
-        print(Project_art.create_course)
+        print(project_art.create_course)
         while True:
             try:  
                 print(
@@ -182,7 +182,7 @@ class ProfPortal(MainMenu):
         editing the password and verification question."""
 
         try:
-            print(Project_art.profile)
+            print(project_art.profile)
             print(
                 "To return to the main menu, press 'Ctrl + C'.",
                 "For any other operation please make a choice.",
@@ -215,7 +215,7 @@ class ProfPortal(MainMenu):
     def create_assignment(cls, course: Course):
         """Allows the professor to create an assignment for the
         course by providing necessary information."""
-        print(Project_art.create_assignment)
+        print(project_art.create_assignment)
         while True:
             try:
                 print(
@@ -288,7 +288,7 @@ class ProfPortal(MainMenu):
                 if n == 1:
                     n += 1
                     assignments = course.course_assignments
-                    print(Project_art.list_assignments)
+                    print(project_art.list_assignments)
                     if len(assignments) > 0:
                         print("To view an assignment details, please make a choice.")
                     print("To return to the course overview, press 'Ctrl + C'.\n")
@@ -329,7 +329,7 @@ class ProfPortal(MainMenu):
 
         while True:
             try:
-                print(Project_art.view_assignment)
+                print(project_art.view_assignment)
                 print(
                     "To return to asignments list, press 'Ctrl + C'.",
                     "To review student solution and assign grade, please pick a student.\n",
@@ -416,7 +416,7 @@ class ProfPortal(MainMenu):
             try:
                 if n == 1:
                     n += 1
-                    print(Project_art.set_grade)
+                    print(project_art.set_grade)
                     print("To return to the assignment overview, press 'Ctrl + C'.\n")
                     print(
                         tabulate(
@@ -464,7 +464,7 @@ class ProfPortal(MainMenu):
         if it's valid according to the specified criteria."""
 
         try:
-            print(Project_art.profile)
+            print(project_art.profile)
             print("To return to profile page, press 'Ctrl + C'.")
             print("Please enter the new password in the password field.")
 
@@ -487,7 +487,7 @@ class ProfPortal(MainMenu):
     @classmethod
     def edit_question(cls):
         try:
-            print(Project_art.profile)
+            print(project_art.profile)
             print("To return to profile page, press 'Ctrl + C'.")
             print("Please enter the question and answer in the specified fields below.")
 
@@ -515,7 +515,7 @@ class ProfPortal(MainMenu):
         and provides an option to delete the course."""
 
         try:
-            print(Project_art.course_overview)
+            print(project_art.course_overview)
             print(
                 "To return to courses list, press 'Ctrl + C'.",
                 "To view an assignment, create a new one, or delete the course, please make a choice.",

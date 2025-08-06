@@ -12,12 +12,12 @@ import re  # Regular expressions for email and password validation
 import pickle  # Save and load user object data
 import os  # ,subprocess  # Clear screen and interact with the OS
 from users import User  # Creating users
-import Project_art  # Project-specific art elements
+import project_art  # Project-specific art elements
 import random  # Generate random user IDs
 
 
-USERNAMES_LIST_PATH = r"Users/usernames_list.txt"
-USER_OBJECTS_FOLDER = "Users"
+USERNAMES_LIST_PATH = r"users/usernames_list.txt"
+USER_OBJECTS_FOLDER = "users"
 
 
 class MainMenu:
@@ -32,7 +32,7 @@ class MainMenu:
         """Provides options to log in, sign up, or shut down."""
 
         try:
-            print(Project_art.main_menu)
+            print(project_art.main_menu)
             print(
                 "Please make a choice:",
                 "   1 - Login",
@@ -62,7 +62,7 @@ class MainMenu:
         """Prompts the user for their username and password, with an
         option available in case the user forgets their password."""
 
-        print(Project_art.Login_portal)
+        print(project_art.Login_portal)
 
         try:
             cls.load_user_data()
@@ -104,7 +104,7 @@ class MainMenu:
         and verifies the validity of the provided information."""
 
         try:
-            print(Project_art.signup_portal)
+            print(project_art.signup_portal)
             print(
                 "Please Type the information requested.\nTo return to the main menu, press 'Ctrl + C'."
             )
@@ -217,7 +217,7 @@ class MainMenu:
         login before selecting 'forgot password'"""
 
         cls.clear_screen()
-        print(Project_art.Login_portal)
+        print(project_art.Login_portal)
         print("To return to the login screen, press 'Ctrl + C'.")
         while True:
             try:

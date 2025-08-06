@@ -14,15 +14,15 @@ and verification question.
 # file are randomly chosen to handle specific cases.
 
 from prof_portal import ProfPortal  # Inheriting some methods
-import Project_art  # Project-specific art elements
+import project_art  # Project-specific art elements
 from tabulate import tabulate  # Making nice looking tables of data
 from courses import Course  # Used in type hints
 import sys # exit
 
-COURSES_LIST_PATH = r"Courses_Data/courses_list.txt"
-COURSE_OBJECTS_FOLDER = "Courses_Data"
-USERNAMES_LIST_PATH = r"Users/usernames_list.txt"
-USER_OBJECTS_FOLDER = "Users"
+COURSES_LIST_PATH = r"courses_data/courses_list.txt"
+COURSE_OBJECTS_FOLDER = "courses_data"
+USERNAMES_LIST_PATH = r"users/usernames_list.txt"
+USER_OBJECTS_FOLDER = "users"
 
 
 # Inherets ProfPortal and MainMenu classes.
@@ -45,7 +45,7 @@ class StudentPortal(ProfPortal):
         such as accessing their profile, logging out, and more."""
 
         try:
-            print(Project_art.student_portal)
+            print(project_art.student_portal)
             print(
                 "Please make a choice:",
                 "   1 - List My Courses",
@@ -84,7 +84,7 @@ class StudentPortal(ProfPortal):
             try:
                 if n == 1:
                     n += 1
-                    print(Project_art.register_course)
+                    print(project_art.register_course)
 
                     current_student_courses = cls.student_registered_courses()
                     courses_can_be_registered = []
@@ -177,7 +177,7 @@ class StudentPortal(ProfPortal):
             try:
                 if n == 1:
                     n += 1
-                    print(Project_art.my_courses)
+                    print(project_art.my_courses)
 
                     current_student_courses = cls.student_registered_courses()
                     if len(current_student_courses) > 0:
@@ -241,7 +241,7 @@ class StudentPortal(ProfPortal):
         while True:
             try:
                 assignments = course.course_assignments
-                print(Project_art.course_overview)
+                print(project_art.course_overview)
                 if len(assignments) > 0:
                     print("To view an assignment details, please make a choice.")
 
@@ -353,7 +353,7 @@ class StudentPortal(ProfPortal):
         to change the password or the verification question."""
 
         try:
-            print(Project_art.profile)
+            print(project_art.profile)
             print(
                 "To return to the main menu, press 'Ctrl + C'.",
                 "For any other operation please make a choice.",
@@ -389,7 +389,7 @@ class StudentPortal(ProfPortal):
         a new password and verifies if it meets specific criteria."""
 
         try:
-            print(Project_art.profile)
+            print(project_art.profile)
             print("To return to profile page, press 'Ctrl + C'.")
             print("Please enter the new password in the password field.")
 
@@ -416,7 +416,7 @@ class StudentPortal(ProfPortal):
 
         while True:
             try:
-                print(Project_art.view_assignment)
+                print(project_art.view_assignment)
                 print("To return to course overview, press 'Ctrl + C'.")
 
                 if len(student["solution"]) == 0:
@@ -460,7 +460,7 @@ class StudentPortal(ProfPortal):
         type at least one character for each."""
 
         try:
-            print(Project_art.profile)
+            print(project_art.profile)
             print("To return to profile page, press 'Ctrl + C'.")
             print("Please enter the question and answer in the specified fields below.")
 
@@ -488,7 +488,7 @@ class StudentPortal(ProfPortal):
         in it before proceeding."""
 
         try:
-            print(Project_art.solution_submission)
+            print(project_art.solution_submission)
             solution = super().get_string("-> Solution: ")
             student["solution"] = solution
 
