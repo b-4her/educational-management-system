@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 
 # Educational Management System (CLI)
-<!--#### Video Demo:  <URL [HERE](https://youtu.be/GC_tZgSSwwM)>-->
+#### Quick Demo:  <[URL](https://www.youtube.com/watch?v=4l945TVITiA)>
 
 ## Overview
 The **Educational Management System (EMS)** is a Python console app that lets students and professors manage courses, assignments, and profiles through a simple command-line interface. Students can enroll in courses and submit assignments, while professors can create courses and grade work. The system uses object-oriented programming and stores data with Python’s `pickle` module for easy saving and loading. EMS is designed to be straightforward, efficient, and a practical way to learn core programming concepts.
@@ -226,4 +226,5 @@ Simply run the program and follow the on-screen instructions to sign up, log in,
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
+
 
