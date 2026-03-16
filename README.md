@@ -1,6 +1,9 @@
 <a id="readme-top"></a>
 
 # Educational Management System (CLI)
+
+**Date:** May 29, 2024
+
 ### Quick Demo:  <[URL](https://www.youtube.com/watch?v=4l945TVITiA)>
 
 ## Overview
